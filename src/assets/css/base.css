@@ -3,6 +3,7 @@
   --color-yellow: #a2a14f;
   --color-white: #b9c2b2;
   --color-border-green: #636e5b;
+  --color-black: #1a1a1a;
 }
 
 .bg-green {
@@ -15,4 +16,8 @@
 
 .border-white {
   border-color: var(--color-green);
+}
+
+.color-black {
+  color: var(--color-black);
 }

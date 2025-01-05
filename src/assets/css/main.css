@@ -1,10 +1,34 @@
 @import './base.css';
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: #CCC;
-    background-image: url('../img/background.jpg');
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-black);
+    background-image: url('../img/background.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    font-family: sans-serif;
+    transition: background-image 0.5s ease-in-out;
+}
+
+#app {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-position-x: right;
+    }
+    
 }
