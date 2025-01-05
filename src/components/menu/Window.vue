@@ -1,55 +1,67 @@
 <script setup>
-
+defineProps({
+  propTitle: {
+    type: String,
+    required: true
+  }
+})
 </script>
 
 <template>
-  <div class="box">
-    <div class="header">
-      <div class="title">(%) Options</div>
-      <div class="close">X</div>
+  <div class="window__box">
+
+    <div class="window__box_header">
+      <div class="window__box_title">[ICON] {{ propTitle }}</div>
+      <div class="window__box_close">X</div>
     </div>
 
-    <div class="content">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quo illum cupiditate nesciunt facilis praesentium nostrum maiores temporibus porro consequuntur vitae fugiat, deserunt iusto illo minima velit ut exercitationem ipsa!
+    <div class="window__box_content">
     </div>
 
-    <div class="footer">
+    <div class="window__box_footer">
     </div>
   </div>
 </template>
 
-
 <style scope>
-.box{
+.window__box{
   display: flex;
-  width: 100%;
+  flex-direction: column;
   min-height: 400px;
   max-width: 1000px;
   background-color: var(--color-green);
   border: 2px solid var(--color-border-green);
   border-radius: 2px;
+  padding: 10px;
 }
 
-.header {
+.window__box_header {
   width: 100%;
-  height: 50px;
-  background-color: var(--color-green);
+  height: 30px;
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
+  align-items: center;
+  box-sizing: border-box;
   font-size: 1rem;
   color: var(--color-white);
 }
 
-.title {
-  display: flex;
-  align-items: center;
-}
-
-.close {
-  display: flex;
-  align-items: center;
+.window__box_close {
   cursor: pointer;
+  border: 1px solid var(--color-white);
+  border-radius: 3px;
+  padding: 3px;
 }
 
+.window__box_content {
+  margin: 5px 0px;
+}
+
+.window__box_footer {
+  justify-content: flex-end;
+  height: 35px;
+  margin-right: 10px;
+  margin-top: auto;
+  display: flex;
+}
 </style>

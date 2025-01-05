@@ -1,0 +1,10 @@
+@import './base.css';
+
+body {
+    background-color: #CCC;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}

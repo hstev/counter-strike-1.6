@@ -4,9 +4,7 @@ import Window from '@/components/menu/Window.vue';
 
 <template>
   <div>
-    
-
-    <Window />
+    <Window propTitle="Options"  />
   </div>
 </template>
 
