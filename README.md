@@ -1,6 +1,7 @@
-# counter-strike 1.6
+# counter-strike 1.6 fan art
 
-This template should help get you started developing with Vue 3 in Vite.
+Este proyecto es un tributo no oficial inspirado en la GUI de Counter-Strike 1.6, un videojuego propiedad de Valve. No está afiliado, respaldado ni aprobado por Valve. Todos los elementos originales de diseño y marcas son propiedad de sus respectivos dueños. Este proyecto es solo para propósitos educativos y no tiene fines comerciales.
+
 
 ## Recommended IDE Setup
 
