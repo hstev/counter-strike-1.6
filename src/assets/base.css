@@ -1,0 +1,18 @@
+:root {
+  --color-green: #4d5843;
+  --color-yellow: #a2a14f;
+  --color-white: #b9c2b2;
+  --color-border-green: #636e5b;
+}
+
+.bg-green {
+  color: var(--color-green);
+}
+
+.text-yellow {
+  color: var(--text-yellow);
+}
+
+.border-white {
+  border-color: var(--color-green);
+}

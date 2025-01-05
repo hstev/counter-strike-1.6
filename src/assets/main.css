@@ -1,0 +1,5 @@
+@import './base.css';
+
+body, html {
+    background-color: #000;
+}
