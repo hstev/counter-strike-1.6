@@ -1,6 +1,7 @@
 <script setup>
 import SteamIcon from '@/components/box/partials/SteamIcon.vue';
 import CloseBtn from '@/components/box/partials/CloseBtn.vue';
+import Btn from '@/components/Btn.vue';
 
 defineProps({
   propTitle: {
@@ -18,7 +19,7 @@ defineProps({
         <SteamIcon /> {{ propTitle }}
       </div>
       <div class="window__box_close">
-        <CloseBtn />
+        <Btn propLabel="X" />
       </div>
     </div>
 
@@ -31,6 +32,8 @@ defineProps({
 </template>
 
 <style scope>
+
+
 
 .window__box{
   display: flex;
