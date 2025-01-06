@@ -1,7 +1,6 @@
 <script setup>
 import SteamIcon from '@/components/box/partials/SteamIcon.vue';
 import CloseBtn from '@/components/box/partials/CloseBtn.vue';
-import Btn from '@/components/Btn.vue';
 
 defineProps({
   propTitle: {
@@ -12,30 +11,25 @@ defineProps({
 </script>
 
 <template>
-  <div class="window__box">
-
-    <div class="window__box_header">
-      <div class="window__box_title">
+  <div class="box">
+    <div class="box_header">
+      <div class="box_title">
         <SteamIcon /> {{ propTitle }}
       </div>
-      <div class="window__box_close">
-        <Btn propLabel="X" />
+      <div class="box_close">
       </div>
     </div>
 
-    <div class="window__box_content">
+    <div class="box_content">
     </div>
 
-    <div class="window__box_footer">
+    <div class="box_footer">
     </div>
   </div>
 </template>
 
 <style scope>
-
-
-
-.window__box{
+.box{
   display: flex;
   flex-direction: column;
   min-height: 400px;
@@ -46,7 +40,7 @@ defineProps({
   padding: 10px;
 }
 
-.window__box_header {
+.box_header {
   width: 100%;
   height: 30px;
   display: flex;
@@ -57,11 +51,11 @@ defineProps({
   color: var(--color-white);
 }
 
-.window__box_content {
+.box_content {
   margin: 5px 0px;
 }
 
-.window__box_footer {
+.box_footer {
   justify-content: flex-end;
   height: 35px;
   margin-right: 10px;
@@ -69,9 +63,8 @@ defineProps({
   display: flex;
 }
 
-.window__box_title {
+.box_title {
   display: flex;
   align-items: center;
 }
-
 </style>
