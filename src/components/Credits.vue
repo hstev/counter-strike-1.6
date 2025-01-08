@@ -3,7 +3,7 @@
 
 <template>
     <div class="credits">
-       <a href="https://github.com/hstev/counter-strike-1.6">Github</a>
+        Replicated with ❤️ by <a href="https://hstev.github.io?ref=counter-strike-1.6" target="_blank">Harol Restrepo</a> (Education purposes only)
     </div>
 </template>
 
@@ -11,6 +11,9 @@
 
 .credits {
     color: var(--color-white);
+    background-color: var(--color-green);
+    padding: 5px;
+    border: 1px solid var(--color-yellow);
 }
 
 .credits a {

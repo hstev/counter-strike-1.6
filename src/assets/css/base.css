@@ -4,6 +4,11 @@
   --color-white: #b9c2b2;
   --color-border-green: #636e5b;
   --color-black: #1a1a1a;
+  --color-green-light: #5c6e51;
+}
+
+.text-white {
+  color: var(--color-white);
 }
 
 .bg-green {

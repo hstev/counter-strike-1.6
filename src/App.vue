@@ -1,21 +1,16 @@
 <script setup>
 import Menu from '@/components/Menu.vue';
 import Credits from '@/components/Credits.vue';
-import Box from '@/components/Box/Index.vue';
 </script>
 
 <template>
-  <div>
-    <Box prop-title="Options"/>
-    <div class="menu_and_credits">
-      <Menu/>
-      <Credits/>
-    </div>
+  <div class="menu_and_credits">
+    <Menu/>
+    <Credits/>
   </div>
 </template>
 
 <style scoped>
-
 .menu_and_credits {
   display: flex;
   justify-content: space-between;

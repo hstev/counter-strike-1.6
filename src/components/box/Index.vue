@@ -1,6 +1,6 @@
 <script setup>
 import SteamIcon from '@/components/box/partials/SteamIcon.vue';
-import CloseBtn from '@/components/box/partials/CloseBtn.vue';
+import Btn from '@/components/Btn.vue';
 
 defineProps({
   propTitle: {
@@ -17,13 +17,16 @@ defineProps({
         <SteamIcon /> {{ propTitle }}
       </div>
       <div class="box_close">
+        <Btn label="X" />
       </div>
     </div>
 
     <div class="box_content">
+      <slot name="content"></slot>
     </div>
 
     <div class="box_footer">
+      <slot name="footer"></slot>
     </div>
   </div>
 </template>
@@ -53,6 +56,30 @@ defineProps({
 
 .box_content {
   margin: 5px 0px;
+  max-height: 400px;
+}
+
+/* SCROLL
+.box_content::-webkit-scrollbar {
+  width: 15px;
+}
+
+.box_content::-webkit-scrollbar-thumb {
+  background-color: var(--color-green);
+  border-left: 1px solid var(--color-border-green);
+  border-top: 1px solid var(--color-border-green);
+  border-right: 1px solid var(--color-border-green);
+  border-bottom: 1px solid var(--color-border-green);
+
+}
+
+.box_content::-webkit-scrollbar-track {
+  background-color: var(--color-green-light);
+}
+*/
+
+.box_close {
+  margin-right: 10px;
 }
 
 .box_footer {

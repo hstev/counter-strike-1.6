@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-    propLabel: {
+    label: {
         type: String,
         required: true
     }
@@ -12,7 +12,7 @@ const clickedBtn = (e) => {
 </script>
 
 <template>
-    <button class="btn" type="button" @click="clickedBtn">{{ propLabel }}</button>
+    <button class="btn" type="button" @click="clickedBtn">{{ label }}</button>
 </template>
 
 <style scoped>
