@@ -1,4 +1,5 @@
 <script setup>
+import Logo from '@/components/Logo.vue';
 
 import { ref } from 'vue';
 
@@ -11,13 +12,16 @@ const items = ref([
 
 </script>
 <template>
-    <ul class="menu">
-        <li v-for="item in items" :key="item.id">{{ item.name }}</li>
-    </ul>
+    <div>
+        <ul class="menu">
+            <li v-for="item in items" :key="item.id">{{ item.name }}</li>
+        </ul>
+        
+        <Logo class="box_logo" />
+    </div>
 </template>
 
 <style scoped>
-
 .menu {
     list-style-type: none;
     padding: 0;
@@ -37,4 +41,8 @@ const items = ref([
     color: var(--color-yellow);
 }
 
+.box_logo{
+    padding-left: 5px;
+    margin-top: 20px;
+}
 </style>

@@ -7,6 +7,13 @@
   --color-green-light: #5c6e51;
 }
 
+@font-face {
+  font-family: 'Counter-Strike';
+  src: url('../fonts/counter_strike/cs_regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .text-white {
   color: var(--color-white);
 }
