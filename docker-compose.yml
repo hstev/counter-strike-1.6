@@ -4,9 +4,9 @@ services:
   vue-app:
     build: .
     ports:
-      - "4000:4000"
+      - "5173:5173"
     volumes:
       - .:/app
     environment:
-      - NODE_ENV=development  
+      - NODE_ENV=development
     command: npm run dev
