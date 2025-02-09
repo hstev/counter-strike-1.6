@@ -28,3 +28,8 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Docker Compose
+```
+docker compose up
+```
