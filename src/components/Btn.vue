@@ -3,6 +3,10 @@ defineProps({
     label: {
         type: String,
         required: true
+    },
+    handleClick: {
+        type: Function,
+        default: () => {}
     }
 })
 
