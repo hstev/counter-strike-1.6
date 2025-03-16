@@ -1,6 +1,8 @@
 # counter-strike 1.6 fan art
 
-Este proyecto es un tributo no oficial inspirado en la GUI de Counter-Strike 1.6, un videojuego propiedad de Valve. No está afiliado, respaldado ni aprobado por Valve. Todos los elementos originales de diseño y marcas son propiedad de sus respectivos dueños. Este proyecto es solo para propósitos educativos y no tiene fines comerciales.
+![cs](./src/assets/img/background.webp)
+
+This project is an unofficial tribute inspired by the Counter-Strike 1.6 graphical user interface. It is not affiliated with, endorsed, or approved by Valve. All original design elements and trademarks are the property of their respective owners. This project is for educational purposes only and has no commercial intent.
 
 
 ## Recommended IDE Setup
