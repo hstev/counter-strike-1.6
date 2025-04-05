@@ -1,24 +1,10 @@
 <script setup>
 import Menu from '@/components/Menu.vue';
-import Box from '@/components/box/Index.vue';
-import Btn from '@/components/Btn.vue';
-
-
 </script>
 
 <template>
-  <div>
-    <Box propTitle="Still in development - Educational purpose only">
-      <template #content>
-        Contribute <a href="https://github.com/hstev/counter-strike-1.6/" class="link">Github</a>
-      </template>
-      <template #footer>
-        <Btn label="Cancel" />
-      </template>
-    </Box>
-    <div class="start_menu">
-      <Menu />
-    </div>
+  <div class="start_menu">
+    <Menu />
   </div>
 </template>
 
