@@ -9,10 +9,6 @@ import Menu from '@/components/Menu.vue';
 </template>
 
 <style scoped>
-.link {
-  color: var(--color-white);
-  text-decoration: none;
-}
 .start_menu {
   display: flex;
   justify-content: space-between;
