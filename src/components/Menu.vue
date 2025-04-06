@@ -1,20 +1,19 @@
 <script setup>
+import { ref } from 'vue';
 import Logo from '@/components/Logo.vue';
 
-import { ref } from 'vue';
-
-const items = ref([
-    { id: 1, name: 'New Game' },
-    { id: 2, name: 'Find Servers' },
-    { id: 3, name: 'Options' },
-    { id: 4, name: 'Quit' },
-]);
+const menuItems = [
+    { id: 1, component: '<notImplemented>', name: 'New Game' },
+    { id: 2, component: '<notImplemented>', name: 'Find Servers' },
+    { id: 3, component: '<notImplemented>', name: 'Options' },
+    { id: 4, component: '<notImplemented>', name: 'Quit' },
+];
 
 </script>
 <template>
     <div>
         <ul class="menu">
-            <li v-for="item in items" :key="item.id">{{ item.name }}</li>
+            <li v-for="item in menuItems" :key="item.id">{{ item.name }}</li>
         </ul>
         
         <Logo class="box_logo" />
