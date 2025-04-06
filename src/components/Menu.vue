@@ -1,5 +1,4 @@
 <script setup>
-import { ref } from 'vue';
 import Logo from '@/components/Logo.vue';
 
 const menuItems = [
@@ -10,6 +9,7 @@ const menuItems = [
 ];
 
 </script>
+
 <template>
     <div>
         <ul class="menu">

@@ -33,7 +33,6 @@ const clickedBtn = (e) => {
     font-size: 1rem;
 }
 
-/* TODO: Clickable event */
 .btn:hover {
     border-left: 1px inset var(--color-black) ;
     border-top: 1px inset var(--color-black);

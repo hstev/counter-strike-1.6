@@ -7,7 +7,7 @@ export const store = reactive({
 
 export const mutations = {
     setNewGameCfg(value) {
-        store.newGame = value;
+        store.newGameCfg = value;
     },
     setFindServersCfg(value) {
         store.findServersCfg = value;
