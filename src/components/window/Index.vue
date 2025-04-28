@@ -11,28 +11,34 @@ defineProps({
 </script>
 
 <template>
-  <div class="box">
-    <div class="box_header">
-      <div class="box_title">
+  <div class="window">
+    <div class="window_header">
+      <div class="window_title">
         <SteamIcon /> {{ propTitle }}
       </div>
-      <div class="box_close">
+      <div class="window_close">
         <Btn label="X" />
       </div>
     </div>
 
-    <div class="box_content">
+    <div class="window_content">
       <slot name="content"></slot>
     </div>
 
-    <div class="box_footer">
+    <div class="window_footer">
       <slot name="footer"></slot>
     </div>
   </div>
 </template>
 
 <style scope>
-.box{
+#draggable {
+  position: absolute;
+  z-index: 9;
+  cursor: move;
+}
+
+.window{
   display: flex;
   flex-direction: column;
   width: 800px;
@@ -44,46 +50,28 @@ defineProps({
   padding: 10px;
 }
 
-.box_header {
+.window_header {
   width: 100%;
   height: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
+  box-sizing: border-window;
   font-size: 1rem;
   color: var(--color-white);
+  cursor: move;
 }
 
-.box_content {
+.window_content {
   margin: 5px 0px;
   max-height: 400px;
 }
 
-/* SCROLL
-.box_content::-webkit-scrollbar {
-  width: 15px;
-}
-
-.box_content::-webkit-scrollbar-thumb {
-  background-color: var(--color-green);
-  border-left: 1px solid var(--color-border-green);
-  border-top: 1px solid var(--color-border-green);
-  border-right: 1px solid var(--color-border-green);
-  border-bottom: 1px solid var(--color-border-green);
-
-}
-
-.box_content::-webkit-scrollbar-track {
-  background-color: var(--color-green-light);
-}
-*/
-
-.box_close {
+.window_close {
   margin-right: 10px;
 }
 
-.box_footer {
+.window_footer {
   justify-content: flex-end;
   height: 35px;
   margin-right: 10px;
@@ -91,7 +79,7 @@ defineProps({
   display: flex;
 }
 
-.box_title {
+.window_title {
   display: flex;
   align-items: center;
 }

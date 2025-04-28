@@ -10,8 +10,6 @@ const menuItems = [
     { id: 4, component: null, name: 'Quit' },
 ];
 
-
-
 const currentWindow = ref(null);
 
 </script>
