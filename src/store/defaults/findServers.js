@@ -1,4 +1,4 @@
-export const findServersCfg = {
+export const findServers = {
     internet: [
         { 
             id: 999999,

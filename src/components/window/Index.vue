@@ -1,5 +1,5 @@
 <script setup>
-import SteamIcon from '@/components/box/partials/SteamIcon.vue';
+import SteamIcon from '@/components/window/partials/SteamIcon.vue';
 import Btn from '@/components/Btn.vue';
 
 defineProps({
@@ -35,8 +35,9 @@ defineProps({
 .box{
   display: flex;
   flex-direction: column;
+  width: 800px;
   min-height: 400px;
-  max-width: 1000px;
+  max-width: 800px;
   background-color: var(--color-green);
   border: 2px solid var(--color-border-green);
   border-radius: 2px;

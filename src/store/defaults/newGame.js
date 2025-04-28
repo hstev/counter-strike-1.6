@@ -1,4 +1,4 @@
-export const newGameCfg = {
+export const newGame = {
     server: {
         maps: [
             { id: -1, name: '< Random Map >', selected: true },
