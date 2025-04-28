@@ -1,5 +1,5 @@
 <template>
-    <Box propTitle="New Game">
+    <Box propTitle="Console">
       <template #content>
       </template>
       <template #footer>

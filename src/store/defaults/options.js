@@ -1,4 +1,4 @@
-export const optionsCfg = {
+export const options = {
     multiplayer: {
         playerName: 'SK|SpawN',
         sprayPaint: {

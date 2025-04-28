@@ -1,11 +1,11 @@
-import { newGameCfg } from '@/store/defaults/newGame.cfg.js';
-import { findServersCfg } from '@/store/defaults/findServers.cfg.js';
-import { optionsCfg } from '@/store/defaults/options.cfg.js';
-import { consoleCfg } from '@/store/defaults/console.cfg.js';
+import { newGame } from '@/store/defaults/newGame.js';
+import { findServers } from '@/store/defaults/findServers.js';
+import { options } from '@/store/defaults/options.js';
+import { console } from '@/store/defaults/console.js';
 
 export const defaults = {
-    newGameCfg,
-    findServersCfg,
-    optionsCfg,
-    consoleCfg
+    newGame,
+    findServers,
+    options,
+    console
 }

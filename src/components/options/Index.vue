@@ -9,6 +9,6 @@
 </template>
 
 <script setup>
-import Box from '@/components/box/Index.vue'
+import Box from '@/components/window/Index.vue'
 import Btn from '@/components/Btn.vue'
 </script>
