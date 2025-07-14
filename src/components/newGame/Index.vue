@@ -1,9 +1,10 @@
 <template>
-    <Box propTitle="New Game">
+    <Box title="New Game">
       <template #content>
       </template>
       <template #footer>
-        <Btn label="Cancel" />
+        <Btn label="Start"/>
+        <Btn label="Cancel"/>
       </template>
     </Box>
 </template>

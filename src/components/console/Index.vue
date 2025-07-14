@@ -1,5 +1,5 @@
 <template>
-    <Box propTitle="Console">
+    <Box title="Console">
       <template #content>
       </template>
       <template #footer>

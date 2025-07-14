@@ -9,14 +9,10 @@ defineProps({
         default: () => {}
     }
 })
-
-const clickedBtn = (e) => {
-    console.log('Button clicked');
-}
 </script>
 
 <template>
-    <button class="btn" type="button" @click="clickedBtn">{{ label }}</button>
+    <button class="btn" type="button" @click="handleClick">{{ label }}</button>
 </template>
 
 <style scoped>

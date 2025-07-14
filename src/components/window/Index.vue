@@ -1,23 +1,30 @@
 <script setup>
+import { ref } from 'vue';
 import SteamIcon from '@/components/window/partials/SteamIcon.vue';
 import Btn from '@/components/Btn.vue';
 
 defineProps({
-  propTitle: {
+  title: {
     type: String,
     required: true
-  }
+  },
 })
+
+const closeBtn = ref(true);
+
+const close = () => {
+  closeBtn.value = false;
+}
 </script>
 
 <template>
-  <div class="window">
+  <div class="window" v-show="closeBtn">
     <div class="window_header">
       <div class="window_title">
-        <SteamIcon /> {{ propTitle }}
+        <SteamIcon /> {{ title }}
       </div>
       <div class="window_close">
-        <Btn label="X" />
+        <Btn label="X" :handleClick="close"/>
       </div>
     </div>
 
@@ -32,12 +39,6 @@ defineProps({
 </template>
 
 <style scope>
-#draggable {
-  position: absolute;
-  z-index: 9;
-  cursor: move;
-}
-
 .window{
   display: flex;
   flex-direction: column;
