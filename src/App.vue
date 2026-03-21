@@ -11,9 +11,12 @@ import Menu from '@/components/Menu.vue';
 <style scoped>
 .start_menu {
   display: flex;
-  justify-content: space-between;
-  align-items: end;
-  background-color: var(--color-dark);
-  padding: 10px;
+  justify-content: flex-start;
+  align-items: flex-end;
+  /* Let the wallpaper show through; the in-game menu is text-only, not a panel */
+  background: transparent;
+  padding: 16px 24px 28px;
+  box-sizing: border-box;
+  min-height: 0;
 }
 </style>
